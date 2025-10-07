@@ -1,0 +1,92 @@
+@import '../librarys/bootstrap-5/css/bootstrap.css';
+@import '../librarys/bootstrap-5/css/bootstrap.min.css';
+@import '../librarys/bootstrap-5/css/bootstrap-grid.css';
+@import '../librarys/bootstrap-5/css/bootstrap-reboot.css';
+@import '../librarys/bootstrap-5/css/bootstrap-utilities.css';
+@import '../librarys/select2/dist/css/select2.css';
+@import '../librarys/select2-bootstrap/dist/select2-bootstrap-5-theme.css';
+@import '../librarys/fontawesome/css/all.css';
+@import '../librarys/jodit/css/jodit.css';
+@import '../librarys/tom-select/scss/tom-select.default.scss';
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  -webkit-print-color-adjust: exact;
+  background: #dfe0e2
+}
+
+.page {
+  width: 210mm;
+  font-size: 12pt;
+  margin: 2em auto;
+}
+
+.required:after{
+    content:" *";
+    color: red;
+}
+.btn-delete-items {
+  border-radius: 50% 10px 50% 10px !important;
+}
+
+:root {
+  --bleeding: 0.5cm;
+  --margin: 1cm;
+}
+
+@page {
+  size: A4;
+}
+
+.page {
+  width: 210mm;
+  font-size: 12pt;
+  margin: 2em auto;
+}
+
+.rm-bolinha{
+  list-style-type: none;
+}
+
+@media print {
+  :root {
+    --bleeding: 0cm;
+    --margin: 0cm;
+  }
+
+  .page {
+    border: none!important;
+    margin: 0;
+    width: 100%!important;
+    font-size: 11pt;
+  }
+  .no-print {
+    display: none!important;
+  }
+  .no-border.shadow {
+    border: 0!important;
+    box-shadow: 0 0 0 0 !important;
+  }
+}
+
+.bg-black-300 {
+  background-color: #575757bd!important;
+}
+
+.help-button {
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  bottom: 0;
+  margin: 0px 1rem 1rem 0px;
+}
+
+.help-button a {
+  border-radius: 15px 15px 0 15px;
+}
+
