@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y \
 # Configuração e instalação das extensões PHP
 RUN docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
     && docker-php-ext-configure intl \
-    && docker-php-ext-install \
+    && docker-php-ext-install \ 
         pdo_mysql \
         sockets \
         intl \
