@@ -1,41 +1,33 @@
-# Laravel / PHP
-/vendor
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/debugbar/*
-/storage/framework/cache/data/*
-/storage/framework/sessions/*
-/storage/framework/views/*
-/storage/logs/*.log
-/.phpunit.cache
-.phpactor.json
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-auth.json
-
-# Environment
+# Arquivos de ambiente
 .env
 .env.backup
 
-# Node / npm / yarn
-npm-debug.log
-yarn-error.log
-.pnpm-debug.log
+# Dependências
+/vendor
+/node_modules
 
-# IDE / Editor
+# Builds e cache
+/public/build
+/public/hot
+/public/storage
+/.phpunit.cache
+/.phpunit.result.cache
+/storage/*.key
+/storage/pail
+
+# Configurações locais e IDEs
+/.fleet
 /.idea
 /.vscode
 /.zed
-/.fleet
 
-# Docker / Sail
-.docker/
-.sail/
+# Arquivos e logs diversos
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+.phpactor.json
 
-# Mac / Linux system files
-.DS_Store
-Thumbs.db
+# Ignorar configurações do PHPUnit
+.phpunit.result.cache
