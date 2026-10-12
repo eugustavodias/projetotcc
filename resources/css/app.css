@@ -1,4 +1,17 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Arquivos que o Tailwind deve ler para gerar as classes usadas */
+@source "../views/**/*.blade.php";
+@source "../js/**/*.js";
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+
+/* Identidade visual da IBBB (cores serão refinadas na etapa do layout base) */
+@theme {
+    --color-betel-50: #e8f3f6;
+    --color-betel-100: #c8e2ea;
+    --color-betel-500: #0b6f8a;
+    --color-betel-700: #074f63;
+    --color-betel-900: #04303c;
+
+    --font-sans: "Ubuntu", ui-sans-serif, system-ui, sans-serif;
+}
